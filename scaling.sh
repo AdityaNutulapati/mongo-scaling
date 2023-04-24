@@ -2,11 +2,9 @@
 xcode-select --install
 curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 /bin/bash install.sh
-nano ~/.zshrc
 nano ~/.bash_profile
 echo "hello"
 export PATH=/usr/local/bin:$PATH
-source ~/.zshrc
 source ~/.bash_profile
 brew doctor
  # To get the latest package lists
