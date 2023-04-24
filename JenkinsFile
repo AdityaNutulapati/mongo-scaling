@@ -14,6 +14,7 @@ pipeline{
         stage('Checkout')
         {
             steps{
+                sh "apt-get update"
                 sh "chmod +x scaling.sh"
                 sh "./scaling.sh $cluster_name $cluster_size"
                 
