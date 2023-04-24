@@ -14,6 +14,7 @@ pipeline{
         stage('Checkout')
         {
             steps{
+                sh "brew install atlas"
                 sh "chmod +x scaling.sh"
                 sh "./scaling.sh $cluster_name $cluster_size"
                 
