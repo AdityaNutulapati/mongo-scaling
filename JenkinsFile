@@ -15,8 +15,8 @@ pipeline{
         {
             steps{
                 // dir("/opt/homebrew/bin/brew")
-                sh chdir="/opt/homebrew/bin/brew"
-                sh "brew install mongodb-atlas"
+                sh chdir="/opt/homebrew/bin/brew | brew install mongodb-atlas"
+                // sh "brew install mongodb-atlas"
                 sh "chmod +x scaling.sh"
                 // sh "atlas --version"
                 sh "./scaling.sh $cluster_name $cluster_size"
