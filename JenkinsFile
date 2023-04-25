@@ -17,6 +17,7 @@ pipeline{
                 // dir("/opt/homebrew/bin/brew")
                 sh chdir="/opt/homebrew/bin/brew"
                 sh "brew install mongodb-atlas"
+                sh "which brew"
                 // sh "brew install mongodb-atlas"
                 // sh "chmod +x scaling.sh"
                 // sh "atlas --version"
