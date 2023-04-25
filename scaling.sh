@@ -1,7 +1,8 @@
 #!/bin/bash
 xcode-select --install
-set | grep TERM
-curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+# set | grep TERM
+# curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 /bin/bash install.sh
 nano ~/.bash_profile
 echo "hello"
