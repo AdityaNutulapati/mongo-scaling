@@ -14,7 +14,8 @@ pipeline{
         stage('Checkout')
         {
             steps{
-                dir("/opt/homebrew/bin/brew")
+                // dir("/opt/homebrew/bin/brew")
+                sh chdir="/opt/homebrew/bin/brew"
                 sh "brew --version"
                 sh "chmod +x scaling.sh"
                 // sh "atlas --version"
