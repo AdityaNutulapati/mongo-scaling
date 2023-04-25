@@ -1,6 +1,6 @@
 #!/bin/bash
 xcode-select --install
-yum update mongodb-atlas-cli
+set | grep TERM
 curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 /bin/bash install.sh
 nano ~/.bash_profile
