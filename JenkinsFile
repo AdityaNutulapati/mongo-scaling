@@ -1,9 +1,9 @@
 def bucketname = null
 pipeline{
     agent any
-    environment {
-    MARIADB_CREDS=credentials('mariadb-creds')
-  }
+//     environment {
+//     MARIADB_CREDS=credentials('mariadb-creds')
+//   }
     tools {
         terraform 'terraform-11'
     }
