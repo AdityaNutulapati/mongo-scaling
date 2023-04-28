@@ -17,8 +17,8 @@ pipeline{
             steps{
                 withCredentials([usernameColonPassword(
                     credentialsId:'mongo-credentials',
-                    publickey:'PUBLIC_KEY',
-                    privatekey:'PRIVATE_KEY')])
+                    usernameVariable:'PUBLIC_KEY',
+                    passwordVariable:'PRIVATE_KEY')])
                     {
                         // sh "TEST=`pwd`"
                         sh "./scaling.sh $PUBLIC_KEY $PRIVATE_KEY $cluster_name $project_id $cluster_size" 
