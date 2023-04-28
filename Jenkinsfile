@@ -15,7 +15,7 @@ pipeline{
         stage('Checkout')
         {
             steps{
-                withCredentials([usernameColonPassword(
+                withCredentials([usernamePassword(
                     credentialsId:'mongo-credentials',
                     usernameVariable:'PUBLIC_KEY',
                     passwordVariable:'PRIVATE_KEY')])
